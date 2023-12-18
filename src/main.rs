@@ -29,11 +29,11 @@ fn is_anagram(s1: &String, s2: &String) -> bool {
         return false;
     }
 
-    let mut s1 = Vec::from(s1.trim().to_lowercase());
-    let mut s2 = Vec::from(s2.trim().to_lowercase());
+    let mut s1_vec = Vec::from(s1.trim().to_lowercase());
+    let mut s2_vec = Vec::from(s2.trim().to_lowercase());
 
-    s1.sort();
-    s2.sort();
+    s1_vec.sort();
+    s2_vec.sort();
     
-    s1 == s2
+    s1_vec == s2_vec
 }
